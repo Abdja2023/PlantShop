@@ -1,0 +1,861 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: "jost";
+  font-size: 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.FirstScreen {
+  height: 140vh;
+  background-image: url("/Resources/DownShadow.png"),
+    url("/Resources/ModernInterior.png");
+  background-position: bottom, top;
+  background-size: 100% 20%, 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.HeaderFirst {
+  width: 100%;
+  height: 40px;
+  padding-top: 30px;
+}
+
+.NavFirst {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.NavUl {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  list-style-type: none;
+  width: 35%;
+  justify-content: space-around;
+}
+.NavUl li {
+  text-decoration: none;
+}
+
+.NavUl li a {
+  text-decoration: none;
+  font-weight: 400;
+  color: #fff;
+}
+
+.NavUl li a:hover {
+  /* color: linear-gradient(#2af5a2, #009efd); */
+  background: -webkit-linear-gradient(#2af5a2, #009efd);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.Cart {
+  position: absolute;
+  right: 100px;
+}
+.Cart img {
+  width: 25px;
+  height: 30px;
+  position: relative;
+}
+
+.Cart span {
+  font-size: 10px;
+  font-weight: 500;
+  background: linear-gradient(to right, #2af5a2, #009efd);
+  padding: 0 5px;
+  border-radius: 50%;
+  position: absolute;
+  left: 20px;
+}
+
+.MainPar {
+  font-size: 65px;
+  font-family: "Work sans";
+  font-weight: 700;
+  color: white;
+  width: 1000px;
+  text-align: center;
+  margin: 30px 0 0 0;
+}
+.SecondaryPar {
+  font-size: 20px;
+  width: 400px;
+  text-align: center;
+  color: #fff;
+  font-weight: 300;
+}
+.FirstScreen .Price {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.FirstScreen .Product01 {
+  top: 400px;
+  right: 40px;
+}
+.FirstScreen .Product02 {
+  top: 360px;
+  left: 110px;
+}
+.FirstScreen .Product03 {
+  top: 250px;
+  left: 30px;
+}
+
+.FirstScreen .Price .Content {
+  padding: 10px 5px;
+  background-color: #ffffff46;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  /* display: none; */
+  visibility: visible;
+}
+
+.FirstScreen .Price .PPro,
+.SPPRO {
+  color: white;
+  margin: 0;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.FirstScreen .Price img {
+  width: 15px;
+  padding: 10px;
+  border: 1px solid rgb(240, 235, 235);
+  border-radius: 50%;
+  background-color: #ffffff71;
+}
+.SearchInput {
+  display: flex;
+  flex-direction: row;
+  width: 23%;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 30px;
+  background-color: rgba(154, 156, 151, 0.705);
+}
+.SearchInput img {
+  background-color: none;
+  width: 33px;
+  height: 33px;
+}
+
+.SearchInput input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+.SearchInput input::placeholder {
+  color: #fff;
+}
+
+.SecondScreen {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+}
+
+.Features {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1fr;
+  grid-template-rows: 1fr;
+  width: 70%;
+}
+
+.Feature {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 2fr;
+  justify-content: center;
+}
+
+.Feature img {
+  grid-row: 1/3;
+  width: 70px;
+}
+.Feature p {
+  margin: auto 0;
+}
+
+.Feature span {
+  font-size: 15px;
+}
+
+.CallCenter img {
+  margin-right: 20px;
+}
+
+.BestSeller {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  width: 70%;
+  height: 70vh;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.BestSeller .First p {
+  margin: 0;
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.BestSeller .First a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #4f4f4f;
+}
+
+.BestSeller .First a:hover {
+  text-decoration: underline;
+}
+
+.BestSeller .Products {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.BestSeller div img {
+  width: 180px;
+}
+
+.ProCard {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-image: url("/Resources/ProductsBackground.png");
+  background-size: 100% 80%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.ProCard .Content {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border-radius: 30px 30px 0 0;
+  position: relative;
+}
+
+.Content .Rating .fa-star {
+  font-size: 10px;
+  margin: -5px -2px;
+}
+.Content .Rating .checked {
+  color: orange;
+}
+
+.Content .Price {
+  position: absolute;
+  width: 80%;
+  bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.Content .Price img {
+  width: 20px;
+}
+
+.ThirdScreen {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.ThirdScreen p:first-child {
+  margin: 0;
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.ThirdScreen span {
+  font-size: 18px;
+}
+
+.ThirdScreen .RoomTypes {
+  display: grid;
+  grid-template-columns: 400px 400px;
+  grid-template-rows: 325px 225px;
+  width: 70%;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 30px;
+}
+.ThirdScreen .RoomTypes .LivingRoom {
+  grid-row: 1;
+  grid-column: 1;
+  width: 100px;
+}
+.ThirdScreen .RoomTypes .BedRoom {
+  grid-column: 2;
+  grid-row: 1/3;
+}
+.ThirdScreen .RoomTypes .Kitchen {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.ThirdScreen .RoomTypes .Kitchen img,
+.ThirdScreen .RoomTypes .BedRoom img,
+.ThirdScreen .RoomTypes .LivingRoom img {
+  width: 400px;
+}
+
+.FourthScreen {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100vh;
+}
+
+.FourthScreen .Content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 70%;
+}
+.FourthScreen .Content .LeftContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 400px;
+  justify-content: center;
+  height: 70vh;
+}
+
+.FourthScreen .Content .LeftContent .Titles {
+  width: 300px;
+  height: 35%;
+  margin-bottom: 40px;
+}
+.FourthScreen .Content img:last-child {
+  width: 400px;
+}
+.FourthScreen .Content .Titles p:first-child {
+  font-size: 40px;
+  margin: 0;
+}
+
+.FourthScreen .LeftContent .Titles span {
+  font-size: 12px;
+}
+
+.Item-1,
+.Item-2,
+.Item-3,
+.Item-4 {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 1fr;
+  height: 80px;
+}
+.FourthScreen .Content .Card img {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  width: 45px;
+  align-self: center;
+  justify-self: flex-start;
+}
+.FourthScreen .Content .Card p {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 500;
+  align-self: center;
+}
+
+.FourthScreen .Content .Card span {
+  font-size: 12px;
+}
+
+footer {
+  width: 100%;
+  height: fit-content;
+  background: linear-gradient(to right, #566270, #283444);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .Content {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr) 2fr;
+}
+footer .Content .Search {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 30px;
+  margin-bottom: 5px;
+}
+footer .Content .Search p:first-child {
+  color: #fff;
+  font-size: 35px;
+  margin: 10px 0;
+}
+footer .Content .Search div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.322);
+  border: 1px solid #fff;
+}
+footer .Content .Search div input {
+  background: none;
+  border: none;
+  outline: none;
+  padding-left: 5px;
+  color: #ffffffbb;
+  width: 50%;
+}
+
+footer .Content .Search div input::placeholder {
+  font-size: 16px;
+  padding-left: 5px;
+  color: #ffffffbb;
+}
+
+footer .Content .Search div button {
+  background: linear-gradient(to right, #2af5a2, #009efd);
+  border: none;
+  padding: 3px 20px;
+  border-radius: 30px;
+  color: white;
+}
+
+footer .FootUl {
+  list-style-type: none;
+}
+
+footer .FootUl li a {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  font-weight: 200;
+}
+
+footer .FootUl li a:hover {
+  font-weight: 300;
+}
+footer .FootUl li:first-child {
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+footer .LocationLi {
+  line-height: 1px;
+}
+
+footer .Rights {
+  width: 80%;
+  color: white;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid white;
+}
+footer .Rights p {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 1000px) {
+  footer .Content {
+    width: 95%;
+  }
+  .MainPar {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .MainPar {
+    font-size: 50px;
+    width: fit-content;
+  }
+
+  .Features {
+    width: 90%;
+  }
+  .BestSeller {
+    gap: 10px;
+    width: 90%;
+  }
+
+  .BestSeller .First a {
+    font-size: 12px;
+  }
+  .BestSeller .First p {
+    font-size: 33px;
+  }
+  .BestSeller .Products {
+    gap: 10px;
+  }
+
+  .SecondaryPar {
+    font-size: 19px;
+  }
+
+  .ThirdScreen .RoomTypes .Kitchen img,
+  .ThirdScreen .RoomTypes .BedRoom img,
+  .ThirdScreen .RoomTypes .LivingRoom img {
+    width: 355px;
+  }
+
+  .FourthScreen .Content img:last-child {
+    width: 360px;
+  }
+  .FourthScreen .Content .LeftContent {
+    width: 300px;
+  }
+
+  .FourthScreen .Content .Titles p:first-child {
+    font-size: 30px;
+  }
+  .ThirdScreen .RoomTypes {
+    grid-template-columns: 355px 350px;
+    grid-template-rows: 290px 220px;
+  }
+
+  .FourthScreen .Content {
+    width: 90%;
+  }
+
+  footer .Content {
+    grid-template-columns: repeat(3, 1fr) 2fr;
+    grid-template-rows: 2fr 1fr;
+    align-items: end;
+  }
+
+  footer .Content .Search {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    width: fit-content;
+    justify-self: center;
+  }
+
+  footer .FootUl {
+    height: 50%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .NavUl {
+    width: 45%;
+  }
+  .SecondaryPar {
+    font-size: 17px;
+  }
+  .SearchInput {
+    width: 30%;
+  }
+  .ThirdScreen p:first-child {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .FirstScreen .Product01,
+  .FirstScreen .Product02,
+  .FirstScreen .Product03 {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  .NavUl {
+    width: 55%;
+    padding: 0;
+  }
+  .MainPar {
+    font-size: 35px;
+  }
+  .SearchInput {
+    width: 45%;
+  }
+
+  .SecondScreen {
+    height: fit-content;
+  }
+  .Features {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    width: 40%;
+    row-gap: 30px;
+  }
+  .BestSeller {
+    grid-template-columns: 1fr;
+    grid-template-rows: 170px 1fr;
+    height: 75%;
+    margin-bottom: 30px;
+  }
+  .ThirdScreen .RoomTypes {
+    grid-template-columns: 300px 305px;
+    grid-template-rows: 250px 200px;
+  }
+  .ThirdScreen .RoomTypes .Kitchen img,
+  .ThirdScreen .RoomTypes .BedRoom img,
+  .ThirdScreen .RoomTypes .LivingRoom img {
+    width: 300px;
+  }
+
+  .FourthScreen {
+    position: relative;
+  }
+
+  .FourthScreen .Content {
+    padding: 10%;
+    border-radius: 0px;
+    background-color: rgba(255, 255, 255, 0.521);
+  }
+  .FourthScreen .Content img:last-child {
+    position: absolute;
+    opacity: 0.5;
+    z-index: -1;
+    height: 75%;
+    width: 70%;
+  }
+
+  footer .Content {
+    align-items: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .NavUl li a {
+    font-size: 18px;
+  }
+  .Cart {
+    right: 30px;
+  }
+  .MainPar {
+    font-size: 30px;
+  }
+  .SecondaryPar {
+    font-size: 15px;
+  }
+  .ProCard {
+    width: 150px;
+  }
+
+  .Features {
+    width: 55%;
+  }
+
+  .Feature img {
+    width: 60px;
+  }
+  .BestSeller div img {
+    width: 140px;
+  }
+  .ThirdScreen .RoomTypes {
+    grid-template-columns: 245px 250px;
+    grid-template-rows: 200px 140px;
+  }
+  .ThirdScreen .RoomTypes .Kitchen img,
+  .ThirdScreen .RoomTypes .BedRoom img,
+  .ThirdScreen .RoomTypes .LivingRoom img {
+    width: 250px;
+  }
+  .ThirdScreen p:first-child {
+    font-size: 33px;
+  }
+}
+@media screen and (max-width: 530px) {
+  .NavUl {
+    margin-left: -15%;
+    width: 55%;
+  }
+  .MainPar {
+    font-size: 25px;
+  }
+  .SearchInput {
+    width: 50%;
+  }
+  .Feature img {
+    width: 50px;
+  }
+  .ProCard {
+    width: 130px;
+  }
+  .ProCard .Content {
+    width: 65%;
+  }
+  .Content .Price {
+    width: 70%;
+  }
+
+  .ThirdScreen .RoomTypes {
+    grid-template-columns: 190px 200px;
+    grid-template-rows: 150px 140px;
+  }
+
+  .ThirdScreen .RoomTypes .Kitchen img,
+  .ThirdScreen .RoomTypes .BedRoom img,
+  .ThirdScreen .RoomTypes .LivingRoom img {
+    width: 190px;
+  }
+
+  .ThirdScreen p:first-child {
+    font-size: 28px;
+  }
+  .ThirdScreen span {
+    font-size: 15px;
+  }
+
+  footer .Content {
+    width: 80%;
+  }
+  footer .Content .Search {
+    width: 100%;
+  }
+  footer .Content .Search div {
+    padding: 3px;
+  }
+  footer .Content .Search div button {
+    font-size: 12px;
+    width: 30%;
+  }
+
+  footer .FootUl {
+    padding-left: 25px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .FirstScreen {
+    height: 70vh;
+  }
+  .NavUl {
+    width: 80%;
+  }
+  .SecondaryPar {
+    font-size: 13px;
+    width: 80%;
+  }
+  .SearchInput {
+    width: 75%;
+  }
+
+  .MainPar {
+    font-size: 20px;
+  }
+  .ProCard {
+    width: 100px;
+  }
+
+  .FourthScreen {
+    height: 60vh;
+  }
+
+  .BestSeller div img {
+    width: 100px;
+  }
+
+  .ProCard .Content span {
+    font-size: 15px;
+  }
+
+  .ThirdScreen .RoomTypes {
+    grid-template-columns: 155px 155px;
+    grid-template-rows: 125px 140px;
+  }
+
+  .FourthScreen .Content {
+    padding-bottom: 0%;
+    margin-bottom: 40%;
+  }
+
+  footer .FootUl {
+    border-top: 1px solid #fff;
+    padding-left: 0;
+    width: 50%;
+    height: fit-content;
+    padding-top: 20px;
+  }
+
+  .FourthScreen .Content .LeftContent .Titles {
+    margin-bottom: 0;
+    height: 25%;
+  }
+  .FourthScreen .Content .LeftContent {
+    height: fit-content;
+  }
+
+  .ThirdScreen .RoomTypes .Kitchen img,
+  .ThirdScreen .RoomTypes .BedRoom img,
+  .ThirdScreen .RoomTypes .LivingRoom img {
+    width: 160px;
+  }
+  footer .Content {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+  }
+
+  footer .Support {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 0;
+  }
+
+  footer .UsefulLinks {
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  footer .OurMenu {
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  footer .Address {
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+
+  footer .Content .Search {
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    margin-right: 0;
+  }
+}
+/* @media screen and (max-width : ) {} */
